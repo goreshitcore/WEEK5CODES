@@ -1,0 +1,29 @@
+
+Input	Result
+y
+Are you enjoying the COMP500/ENSE501 labs (y/n)?
+Great! Keep going this is only week 4!
+
+#include <stdio.h>
+int main (void)
+{
+  
+  char response;
+    
+    
+    printf("Are you enjoying the COMP500/ENSE501 labs (y/n)?\n");
+    scanf("%c", &response);
+
+    switch (response) {
+        case 'y':
+        case 'Y':
+            printf("Great! Keep going this is only week 4!\n");
+            break;
+        case 'n':
+        case 'N':
+            printf("Oh no! Don't worry only eight short weeks to go!\n");
+            break;
+        default:
+            printf("Your response makes no sense!\n");
+    }
+}
