@@ -1,0 +1,23 @@
+#include <stdio.h>
+int main()
+{
+    int x, y, a, b;
+    float result;
+
+    
+    printf("Enter the x value:\n");
+    scanf("%d", &x);
+    printf("Enter the y value:\n");
+    scanf("%d", &y);
+    
+    a = x * y; 
+    b = x + y;
+    result = (b * b) + a * (b - x) * (a + y);
+    
+    printf("Computed: %f\n", result);
+    
+    
+    
+
+    
+}
