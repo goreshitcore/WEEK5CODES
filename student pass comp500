@@ -1,0 +1,27 @@
+#include <stdio.h>
+int main ()
+{
+
+    char attendance;
+    char finalexam;
+    char overallgrade;
+    
+    printf("At least 80%% lab tutorial attendance (y/n)?\n");
+    scanf(" %c", &attendance);
+    
+    printf("Minimum of 40%% achieved in Final Exam (y/n)?\n");
+    scanf(" %c", &finalexam);
+    printf("Minimum of C- overall grade (y/n)?\n\n");
+    scanf(" %c", &overallgrade);
+    
+    if ( attendance == 'y' && finalexam == 'y' && overallgrade == 'y')
+    {
+    printf("Student passes COMP500/ENSE501.\n");
+    }
+    
+    else  
+    {
+    printf("Student fails COMP500/ENSE501.\n");
+    }
+
+}
